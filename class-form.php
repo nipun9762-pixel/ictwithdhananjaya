@@ -115,7 +115,7 @@ require '../includes/header.php';
             <?php if (!empty($class['thumbnail'])): ?>
                 <p>Current thumbnail:</p>
                 <img
-                    src="<?= BASE_URL ?>/assets/uploads/class-thumbnails/<?= rawurlencode(basename($class['thumbnail'])) ?>"
+                    src="/assets/uploads/class-thumbnails/<?= rawurlencode(basename($class['thumbnail'])) ?>"
                     alt="Current class thumbnail"
                     class="class-thumbnail-preview"
                 >

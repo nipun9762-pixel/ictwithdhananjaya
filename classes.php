@@ -37,7 +37,7 @@ $classes = $pdo->query("SELECT * FROM classes ORDER BY created_at DESC")->fetchA
                 <td>
                     <?php if (!empty($c['thumbnail'])): ?>
                         <img
-                            src="<?= BASE_URL ?>/assets/uploads/class-thumbnails/<?= rawurlencode(basename($c['thumbnail'])) ?>"
+                            src="/assets/uploads/class-thumbnails/<?= rawurlencode(basename($c['thumbnail'])) ?>"
                             alt="<?= htmlspecialchars($c['title']) ?> thumbnail"
                             class="teacher-class-thumbnail"
                         >

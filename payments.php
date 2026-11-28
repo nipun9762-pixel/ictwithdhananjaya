@@ -64,7 +64,7 @@ require '../includes/header.php';
                     <td>₹<?= number_format($p['amount'], 2) ?></td>
                     <td>
                         <?php if ($p['payment_slip']): ?>
-                            <a href="<?= BASE_URL ?>/assets/uploads/payments/<?= htmlspecialchars($p['payment_slip']) ?>" target="_blank">View Slip</a>
+                            <a href="/assets/uploads/payments/<?= htmlspecialchars($p['payment_slip']) ?>" target="_blank">View Slip</a>
                         <?php endif; ?>
                     </td>
                     <td><?= date('d M Y', strtotime($p['created_at'])) ?></td>
